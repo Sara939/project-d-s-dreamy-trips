@@ -1,0 +1,184 @@
+body {
+  font-family: 'Coda Caption';font-size: 22px;
+  background-color: rgba(232, 194, 81, 0.112);
+  
+ 
+}
+
+.header-div {
+  height: 22vh;
+  background-image: url(/images/headerimg.jpg);
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+  filter: opacity(90%);
+}
+
+.container-style {
+  margin-bottom: 10vh;
+  margin-top: 1vh;
+ 
+}
+
+.container.nav-inside {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -21vh;
+  color: black;
+  background-color: #de9323c7;
+}
+.logo-pic {
+  display: block;
+  background-color: #dda24b;
+  height: 69px;
+  width: 125px;
+  
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  
+}
+
+
+#back1 {
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+
+#list-of-Countries {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  justify-content: space-around;
+  background-color: rgba(232, 194, 81, 0.112);
+  padding-top: 12px;
+  border: 2px solid rgb(0, 0, 0);
+  font-weight: bolder;
+  
+}
+
+
+
+@keyframes main {
+  0% {
+    background-image: url(images/back1.jpg);
+  }
+
+  30% {
+    background-image: url(images/back2.jpg);
+  }
+
+  60% {
+    background-image: url(images/back3.jpg);
+  }
+
+  100% {
+    background-image: url(images/back4.jpg);
+  }
+}
+
+.main-div {
+  background-image: url(images/back1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  animation-name: main;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  font-size: xx-large;
+  font-weight: 200px;
+
+}
+
+.main-text {
+  font-size: 50px;
+  margin: 0px;
+  padding: 36px;
+  background-color: rgba(232, 194, 81, 0.112);
+  font-family: 'Noto Sans Hebrew', sans-serif;
+  font-family: 'Square Peg', cursive;
+
+
+}
+
+
+#empty-div {
+  height: 10vh;
+}
+
+.dropdown {
+  display: none;
+
+}
+
+.footer-div {
+  min-height: 10vh;
+  background-color: #de9323c7;
+  text-align: center;
+
+}
+
+.fa-footer {
+  font-size: large;
+}
+
+@media screen and (max-width:600px) {
+
+
+  .main-text {
+    margin-right: 60px;
+    font-size: 3vh;
+
+  }
+
+  #list-of-Countries {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(232, 194, 81, 0.112);
+    font-size: small;
+
+  }
+
+  .footer-div {
+    min-height: 10vh;
+    background-color: rgba(101, 100, 100, 0.516);
+    text-align: center;
+    position: sticky;
+
+  }
+
+  .container.nav-inside {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(101, 100, 100);
+    min-width: 5vh;
+    padding: 2vh 1vh;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  #empty-div {
+    display: none;
+  }
+
+}
